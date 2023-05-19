@@ -185,7 +185,7 @@ document.addEventListener('pjax:send', () => {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://tzy-blog.vercel.app/',
+      envId: 'http://www.resuni2.eu.org/',
       region: 'ap-shanghai',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -197,7 +197,7 @@ document.addEventListener('pjax:send', () => {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://tzy-blog.vercel.app/',
+      envId: 'http://www.resuni2.eu.org/',
       region: 'ap-shanghai',
       urls: [window.location.pathname],
       includeReply: false
